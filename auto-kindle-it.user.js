@@ -10,4 +10,11 @@
     setTimeout(function() {
         document.getElementById("send").click();
       },100)
+
+    setInterval(function () {
+        var h3 = document.getElementsByTagName("h3")[0];
+        if (h3 != undefined) {
+          history.back();
+        }
+      }, 1000)
 })(this.unsafeWindow || this);
